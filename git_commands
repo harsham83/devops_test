@@ -1,0 +1,900 @@
+    1  ls
+    2  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    3  sudo dpkg -i google-chrome-stable_current_amd64.deb
+    4  node
+    5  node -v
+    6  sudo apt install node js
+    7  sudo apt install nodejs
+    8  node
+    9  sudo dpkg --add-architecture i386
+   10  sudo mkdir -pm755 /etc/apt/keyrings
+   11  sudo wget -O /etc/apt/keyrings/winehq-archive.key https://dl.winehq.org/wine-builds/winehq.key
+   12  sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/ubuntu/dists/$(lsb_release -cs)/winehq-$(lsb_release -cs).sources
+   13  sudo apt update
+   14  sudo apt install --install-recommends winehq-stable
+   15  [200~grep MemTotal /proc/meminfo~
+   16  grep MemTotal /proc/meminfo
+   17  sudo apt install git-all
+   18  sudo dpkg --configure -a
+   19  sudo apt install git-all
+   20  sudo apt update
+   21  sudo apt install putty
+   22  sudo apt install ./<file>.deb
+   23  sudo apt-get install wget gpg
+   24  wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+   25  sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+   26  echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+   27  rm -f packages.microsoft.gpg
+   28  wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+   29  sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+   30  echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+   31  rm -f packages.microsoft.gpg
+   32  sudo apt install apt-transport-https
+   33  sudo apt update
+   34  sudo apt install code
+   35  putty --version
+   36  bash
+   37  putty
+   38  bash
+   39  systeminfo
+   40  grep MemTotal/proc/meminfo
+   41  grep MemTotal /proc/meminfo
+   42  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   43  # Add Docker's official GPG key:
+   44  sudo apt-get update
+   45  sudo apt-get install ca-certificates curl
+   46  sudo install -m 0755 -d /etc/apt/keyrings
+   47  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   48  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   49  # Add the repository to Apt sources:
+   50  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+   51    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   52  sudo apt-get update
+   53  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   54  sudo docker run hello-world
+   55  sudo apt-get update
+   56  sudo apt-get install ./docker-desktop-<arch>.deb
+   57  systemctl --user start docker-desktop
+   58  sudo apt install gnome-terminal
+   59  sudo dpkg -i ./containerd.io_<version>_<arch>.deb   ./docker-ce_<version>_<arch>.deb   ./docker-ce-cli_<version>_<arch>.deb   ./docker-buildx-plugin_<version>_<arch>.deb   ./docker-compose-plugin_<version>_<arch>.deb
+   60  sudo apt update
+   61  sudo apt upgrade
+   62  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+   63  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+   64  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   65  sudo apt update
+   66  sudo apt install docker-ce docker-ce-cli containerd.io
+   67  lsb_release -a
+   68  uname -m
+   69  curl -LO https://desktop.docker.com/linux/main/amd64/docker-desktop-22.04.4-x86_64.deb
+   70  sudo dpkg -i docker-desktop-22.04.4-x86_64.deb
+   71  lscpu
+   72  ped
+   73  pwd
+   74  cd Downloads/
+   75  ls
+   76  sudo dpkg -i docker-desktop-4.29.0-amd64.deb
+   77  sudo apt-get install -f
+   78  systemctl --user start docker-desktop
+   79  docker pull sabair0509/hiring-app:36
+   80  docker container run -itd -p 8080:8080 sabair0509/hiring-app:36
+   81  sudo apt update
+   82  sudo apt upgrade skypeforlinux
+   83  sudo apt install libxcomposite1 libxcursor1 libxdamage1 libxrandr2 libxi6 libxtst6
+   84  cd Devops
+   85  ls
+   86  cd 071824/
+   87  touch Assignment
+   88  cd Devops/071824/
+   89  mkdir task#071824
+   90  ls
+   91  ll
+   92  mv Assignment-07182024.odt ./task#071824/
+   93  clear
+   94  mv Assignment-07182024.odt ./task#071824/
+   95  cd task#071824/
+   96  ls
+   97  mkdir 1 2
+   98  ls
+   99  rm -rf 1 2
+  100  ls
+  101  cp Assignment-07182024.odt ..
+  102  mkdir -p a/b/c
+  103  pwd
+  104  cd a
+  105  rm rf *
+  106  rm -rf *
+  107  cd .
+  108  cd ..
+  109  touch test.java
+  110  touch test.xls
+  111  touch "harsha m"
+  112  clear
+  113  touch test
+  114  vi test
+  115  cat test
+  116  mv test test1
+  117  ls -ltr
+  118  ls -lhr
+  119  ls -t
+  120  ls -l
+  121  ls -a
+  122  ls -h
+  123  ls -lh
+  124  cd Devops/
+  125  touch myfile.xls
+  126  ls
+  127  touch myfile.ods
+  128  cd 071824/
+  129  cd task#071824/
+  130  mkdir -p a/b/c 
+  131  mv b ..
+  132  cd a
+  133  mv b ..
+  134  ls
+  135  cd ..
+  136  ls
+  137  mv b ./a
+  138  ls -ltr
+  139  ls
+  140  cp a ..
+  141  cp a ./..
+  142  ls
+  143  cp test1 ..
+  144  cp a ..
+  145  cp -r a ..
+  146  cp -pr a ..
+  147  cp -pr a ./..
+  148  cp -r a ..
+  149  cp -r a ./..
+  150  cp -pr a ./..
+  151  ls
+  152  find -name .ods
+  153  find -name .odt
+  154  find -name *.odt
+  155  find -size 10m
+  156  find -size +10m
+  157  find ./.. -size +10m
+  158  find ./.. -size +10
+  159  find ./.. -size +10k
+  160  find ./.. -mtime -5
+  161  find ./.. -mtime +5
+  162  find ./.. -mtime +1
+  163  cd ../..
+  164  cd ..
+  165  cd Downloads
+  166  ls
+  167  grep kw day#2
+  168  grep kw day#2.txt 
+  169  grep KW day#2.txt 
+  170  grep all day#2.txt 
+  171  sudo apt update
+  172  sudo apt install openjdk-11-jdk -y
+  173  sudo systemctl start jenkins
+  174  java -version
+  175  wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+  176  sudo systemctl start jenkins
+  177  [200~pub   rsa4096 2023-03-27 [SC] [expires: 2026-03-26]
+  178  uid                      Jenkins Project 
+  179  sub   rsa4096 2023-03-27 [E] [expires: 2026-03-26]
+  180  sudo systemctl start jenkins
+  181  sudo systemctl status jenkins
+  182  sudo journalctl -xeu jenkins
+  183  sudo update-alternatives --config java
+  184  sudo lsof -i:8080
+  185  sudo nano /etc/default/jenkins
+  186  sudo kill -9 $(sudo lsof -t -i:8080)
+  187  sudo systemctl restart jenkins
+  188  sudo systemctl status jenkins
+  189  uname -a
+  190  sudo systemctl restart jenkins
+  191  sudo systemctl start jenkins
+  192  sudo journalctl -xeu jenkins
+  193  sudo apt install openjdk-11-jdk
+  194  sudo update-alternatives --config java
+  195  sudo nano /etc/default/jenkins
+  196  sudo systemctl restart jenkins
+  197  sudo update-alternatives --config java
+  198  df -h
+  199  sudo apt remove --purge jenkins
+  200  sudo apt autoremove
+  201  sudo apt update
+  202  sudo apt install jenkins
+  203  sudo apt --fix-broken install
+  204  sudo systemctl start jenkins
+  205  sudo systemctl enable jenkins
+  206  sudo systemctl start jenkins
+  207  journalctl -u jenkins
+  208  sudo netstat -apn
+  209  journalctl -u jenkins
+  210  netstat -a -n -o | grep "8080"
+  211  sudo lsof -i:8080
+  212  sudo vi /etc/default/jenkins
+  213  sudo systemctl restart jenkins
+  214  sudo kill -9 29646
+  215  sudo systemctl restart jenkins
+  216  sudo systemctl start jenkins
+  217  sudo systemctl restart jenkins
+  218  cat /var/lib/jenkins/secrets/initialAdminPassword
+  219  cd /var/lib/jenkins/secrets/initialAdminPassword
+  220  pwd
+  221  cd /
+  222  /var/lib/jenkins/secrets/initialAdminPassword
+  223  /var/lib/jenkins
+  224  /var/lib
+  225  /var
+  226  var
+  227  sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+  228  sudo systemctl start jenkins
+  229  sudo systemctl restart jenkins
+  230  sudo systemctl start jenkins
+  231  java -version
+  232  head -n 1 ~/Desktop/udhr.txt
+  233  pwd
+  234  head Linux-commands
+  235  ls
+  236  head Linux-commands 
+  237  ls
+  238  head Linux-comm 
+  239  head Assignment-07182024.odt 
+  240  clear
+  241  pwd
+  242  cd /
+  243  pwd
+  244  cd ~
+  245  pwd
+  246  clear
+  247  ls
+  248  ls > practice
+  249  ls
+  250  cat practice
+  251  head practice
+  252  head practice | echo wc
+  253  head practice | wc
+  254  ls
+  255  help
+  256  clear
+  257  echo *
+  258  clear
+  259  man ls
+  260  ls
+  261  ls l
+  262  ls -l
+  263  ls -t
+  264  ls -lt
+  265  sudo adduser harshasri
+  266  pwd
+  267  who
+  268  whoami
+  269  id harshasri
+  270  sudo userdel -r harshasri
+  271  sudo userdel harshasri
+  272  sudo userdel harsha
+  273  id harshasri
+  274  pwd
+  275  cd ~
+  276  pwd
+  277  cd /
+  278  pwd
+  279  ls
+  280  cd ~
+  281  mkdir first/second/third
+  282  ls -h
+  283  ls -l
+  284  ls
+  285  ls -lh
+  286  man ls
+  287  ls -R
+  288  pwd
+  289  ls -R
+  290  ls -i
+  291  pwd
+  292  cd Devops
+  293  mkdir prctice
+  294  cd prctice/
+  295  vi test
+  296  cat test
+  297  wc
+  298  wc test
+  299  tail -F test
+  300  cat /etc/etc/os-release
+  301  cd ~
+  302  cat /etc/etc/os-release
+  303  cd /
+  304  cat /etc/etc/os-release
+  305  cat /etcos-release
+  306  cat /etc/os-release
+  307  clear
+  308  cd Devops
+  309  cd ~
+  310  cd Devops
+  311  cd clear
+  312  clear
+  313  cd 07
+  314  cd 072224/
+  315  Daily_task
+  316  clear
+  317  mkdir Daily_task
+  318  touch sample
+  319  mkdir -p abc/z/y
+  320  echo "hello world" > sample
+  321  cat sample
+  322  ls -l sample
+  323  chmod 617 sample
+  324  ls -l sample
+  325  cd abc/z
+  326  vi myscript.sh
+  327  cat myscript.sh 
+  328  ls -l myscript.sh 
+  329  chmod 777 myscript.sh 
+  330  ls -l myscript.sh 
+  331  ls -s myscript.sh ./shortcut.sh
+  332  ls -s myscript.sh .
+  333  ls
+  334  ls -s myscript.sh ..
+  335  ls
+  336  ln -s ~/Devops/072224/abc/z/myscript.sh ~/Devops/072224/abc/z/myscript_link.sh
+  337  ls
+  338  ln -s myscript test.sh
+  339  ls
+  340  ln -s myscript test
+  341  ls
+  342  ln -s myscript test2
+  343  ln -s myscript myscript_lin
+  344  0
+  345  ln -s myscript myscript_lin
+  346  ln -s myscript ./myscript_lin
+  347  find ~/Devops/072224/abc -name sample
+  348  find ~/Devops/072224/abc -name "sample"
+  349  find /Devops/072224/abc -name "sample"
+  350  find ~/Devops/072224/abc -name sample
+  351  find ~/Devops/072224/abc -name sample > sample
+  352  cd ~/Devops/072224/abc
+  353  ls
+  354  cd ~/Devops/072224
+  355  ls
+  356  cd /abc/z
+  357  cd abc/z
+  358  find ~/Devops/072224/ -name sample > sample
+  359  ls
+  360  find -name myscript
+  361  find ~/Devops/072224/ -name "sample" > sample
+  362  cd ../..
+  363  ls
+  364  find . -name "sample" > sample
+  365  echo "hello world" > sample
+  366  cat sample 
+  367  echo "hello world" >> sample
+  368  cat
+  369  echo "hello world" > sample
+  370  cat sample 
+  371  find . -name "sample" >> sample
+  372  cat sample 
+  373  vi alphabet
+  374  cat
+  375  cat alphabet 
+  376  grep a alphabet 
+  377  grep A alphabet 
+  378  vi demo.sh
+  379  cat demo.sh 
+  380  ps -ef | grep demo.sh 
+  381  vi demo.sh 
+  382  wq!
+  383  ls
+  384  vi test
+  385  clear
+  386  cd ..
+  387  cd 072224/
+  388  ls
+  389  ps -ef demo.sh 
+  390  ps -ef
+  391  ps -ef | grep demo.sh 
+  392  clear
+  393  ps -ef | grep demo.sh 
+  394  kill -9 15453
+  395  kill -9 15345
+  396  ps -ef | grep demo.sh 
+  397  cat demo.sh 
+  398  id
+  399  whoami
+  400  cat /etc/os-release 
+  401  top
+  402  df -h
+  403  mk dir new_dir
+  404  mkdir new_dir
+  405  tar cvf new_dir
+  406  cd new_dir/
+  407  vi test
+  408  tar cvf new_dir
+  409  tar cvf new_dir create_zip
+  410  tar cvf ops.tar new_dir 
+  411  ls
+  412  cd ..
+  413  tar cvf ops.tar new_dir 
+  414  ls
+  415  tar xvf ops.tar 
+  416  ls
+  417  history >> mytask
+  418  cat mytask
+  419  history
+  420  clear
+  421  pwd
+  422  cd .
+  423  clear
+  424  pwd
+  425  cd ..
+  426  mkdir new_dir
+  427  sudo mkdir new_dir
+  428  ls
+  429  ls new_dir
+  430  cd sriharsha/
+  431  ls -1
+  432  cd Devops
+  433  cd 072324/
+  434  touch test
+  435  cat test 
+  436  cp test ..
+  437  ls ..
+  438  mv test test2
+  439  ls
+  440  rm -rf test2 
+  441  ls
+  442  ll ..
+  443  ll .. test
+  444  cd ..
+  445  chmod 777 test 
+  446  ll test
+  447  chmod 744 test 
+  448  ll test
+  449  date
+  450  uptime
+  451  ps -ef
+  452  ps
+  453  ps -ef
+  454  top
+  455  ps -ef | grep assignment
+  456  ps -ef | grep sriharsha
+  457  ps -ef | grep libre
+  458  clear
+  459  ps -ef | grep libre
+  460  kill -9 4932
+  461  ps -ef | grep libre
+  462  ps -ef 
+  463  clear
+  464  ps -ef | grep 072324
+  465  kill -9 7964
+  466  kill -9 7980
+  467  ps -ef | grep 072324
+  468  ps -ef | grep assignment.odt
+  469  kill -9 8316
+  470  ps -ef | grep 072324
+  471  kill -9 8375
+  472  ps -ef | grep 072324
+  473  sudo apt update
+  474  sudo apt install python3
+  475  vscode
+  476  cd ~
+  477  ls
+  478  cd Devops/
+  479  cd 072324/
+  480  ls
+  481  cd ..
+  482  clear
+  483  cd ~
+  484  ls
+  485  cd Devops
+  486  ls -s ~/Desktop/shortkut 072324/
+  487  ln -s ~/Desktop/shortkut 072324/
+  488  man ln -s
+  489  ln -s /Desktop/shortkut 072324/
+  490  cd ./../Desktop
+  491  cd ..
+  492  cd Desktop/
+  493  cd ~/Devops
+  494  man ln
+  495  ln -s 072324/ ~/Desktop/shortcut
+  496  ls ./../Desktop
+  497  $(pwd)
+  498  ln -s ~/072324/ ~/Desktop/shortcut
+  499  ln -s $(pwd)/072324/ ~/Desktop/shortcut
+  500  ls
+  501  find -name **23**
+  502  find -name Desktop
+  503  find -name **23**
+  504  ls ./072224/
+  505  ll ./072224/
+  506  find ./072224/ -name a*
+  507  tar ./test.tar 072224
+  508  tar -cvf ./test.tar 072224
+  509  ls
+  510  tar xvf test.tar 
+  511  top
+  512  htop
+  513  sudo snap install htop  # version 3.3.0
+  514  htop
+  515  sudo groupadd developers
+  516  getent group | cut -d: -f1
+  517  getent group | cut -d: -f1 | grep deve
+  518  getent group | cut -d: -f1 | grep d*
+  519  getent group | cut -d: -f1 | grep [d]*
+  520  sudo usermod -aG developers techie
+  521  getent group developers 
+  522  sudo apt update
+  523  sudo apt install apache2
+  524  sudo systemctl start apache2
+  525  sudo systemctl status apache2
+  526  cat /etc/apache2/ports.conf
+  527  find / -name sudoers
+  528  vi /etc/sudoers
+  529  sudo visudo
+  530  find / -name sudoers 
+  531  find /etc/ -name sudoers
+  532  sudo find /etc/ -name sudoers
+  533  sudo /etc/sudoers
+  534  sudo vi /etc/sudoers
+  535  sudo systemctl status tomcat
+  536  java --version
+  537  sudo apt-cache search tomcat
+  538  sudo apt install tomcat9 tomcat9-admin
+  539  ss -ltn
+  540  lsof -i tcp:8080
+  541  netstat -na | grep 8080
+  542  top 
+  543  top | grep chrome
+  544  ping http://localhost:8080/login?from=%2F
+  545  systemctl status tomcat
+  546  tomcat
+  547  sudo ufw allow from any to any port 8081 proto tcp
+  548  ss -ltn
+  549  wget https://downloads.apache.org/tomcat/tomcat-9/v9.x.xx/bin/apache-tomcat-9.0.91.tar.gz
+  550  ls
+  551  cat awk '{print $1}' myfile.ods 
+  552  awk '{print $1}' myfile.ods 
+  553  echo | awk '{print $1}' myfile.ods 
+  554  cd ..
+  555  cd Downloads/
+  556  awk '{print $1}' day#2.txt 
+  557  awk '{print $9 " " $5}' day#2.txt 
+  558  awk '{print $1 " " $2}' day#2.txt 
+  559  awk '{print $1 "" $2}' day#2.txt 
+  560  awk '{print $1 " " $2}' day#2.txt 
+  561  clear
+  562  awk '{print $1}' day#2.txt 
+  563  vi test
+  564  head -5 test | tail -1
+  565  clear
+  566  cat test 
+  567  head -5 test | tail -1
+  568  systemctl status tomcat
+  569  ls
+  570  systemctl start tomcat
+  571  ss -ltn
+  572  sudo nano /etc/tomcat9/tomcat-users.xml
+  573  sudo nano /etc/tomcat9
+  574  sudo cd /etc/tomcat9
+  575  sudo su
+  576  sudo nano /etc/tomcat9
+  577  sudo /etc/tomcat9
+  578  sudo cd /etc/tomcat9
+  579  cd /etc/tomcat9
+  580  ls
+  581  vi server.xml 
+  582  sudo vi server.xml 
+  583  systemctl restart tomcat
+  584  sudo systemctl stop tomcat
+  585  sudo systemctl start tomcat
+  586  cd ~
+  587  ls
+  588  cd Devops/
+  589  cd 0722
+  590  cd 072224/
+  591  ls -1
+  592  ll 
+  593  cat al
+  594  cat alphabet 
+  595  vi alphabet 
+  596  cat alphabet 
+  597  grep -v ^ $ alphabet
+  598  ipconfig
+  599  ifconfig -a
+  600  sudo vi server.xml 
+  601  sudo cat server.xml 
+  602  /etc/tomcat9
+  603  cd /etc/tomcat9
+  604  ls
+  605  vi server.xml 
+  606  sudo nano server.xml 
+  607  cd ~
+  608  /Devops/072224
+  609  cd /Devops/072224
+  610  cd ~/Devops/072224
+  611  cat alphabet 
+  612  grep -v ^  alphabet 
+  613  grep a alphabet 
+  614  grep -v  alphabet 
+  615  grep -v " " alphabet 
+  616  cat alphabet | xargs
+  617  vi alphabet 
+  618  cat alphabet | xargs
+  619  cat alphabet | xargs > alphabet 
+  620  vi alphabet 
+  621  cat alphabet 
+  622  vi alphabet 
+  623  cat alphabet 
+  624  sed 's/^[ \t]*//;s/[ \t]*$//' alphabet 
+  625  sed -i 's/^[ \t]*//;s/[ \t]*$//' alphabet 
+  626  cat alphabet 
+  627  vi alphabet 
+  628  ls
+  629  cd Daily_task/
+  630  ls
+  631  cat Untitled\ 1.odt 
+  632  clear
+  633  cat Untitled\ 1.odt 
+  634  clear
+  635  vi numbers
+  636  cat numbers 
+  637  awt '{print $1}' numbers 
+  638  awk '{print $1}' numbers 
+  639  httpd
+  640  systemctl status httpd
+  641  systemctl start httpd
+  642  sudo apt install httpd
+  643  lsof -i tcp:80
+  644  lsof -i tcp:8080
+  645  lsof -i localhost:80
+  646  ps -ef | grep httpd
+  647  ps -ef | grep apa
+  648  sudo systemctl status apache2
+  649  find / -name log
+  650  sudo find / -name log | apache
+  651  sudo find / -name log | apache2
+  652  sudo su
+  653  find ~ * | grep log
+  654  cat /home/sriharsha/.config/Code/logs
+  655  cd /home/sriharsha/.config/Code/logs
+  656  ls
+  657  cat 20240715T110830/
+  658  cd 20240715T110830/
+  659  ld
+  660  ls
+  661  cat main.log 
+  662  cd ~
+  663  systemctl status tomcat
+  664  cat /var/log/messages
+  665  cat ~/var/log/messages
+  666  find * | grep messages
+  667  find * | grep var
+  668  sudo su
+  669  cd /etc/tomcat9
+  670  cd ..
+  671  ls
+  672  cd ..
+  673  cd /etc/tomcat9
+  674  ls
+  675  cd ..
+  676  find -name cat
+  677  find ./ -name cat
+  678  sudo find ./ -name cat
+  679  sudo su
+  680  cd ~
+  681  wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.91/bin/apache-tomcat-9.0.91.tar.gz
+  682  tar xvf apache-tomcat-9.0.91.tar.gz 
+  683  ls
+  684  cd apache-tomcat-9.0.91/
+  685  ls
+  686  systemctl start tomcat
+  687  cd bin
+  688  clear
+  689  ls
+  690  bash startup.sh
+  691  ps -ef | grep tomcat
+  692  netstat -na  | grep 808
+  693  netstat -na  | grep 8080
+  694  cd ..
+  695  ls -1
+  696  cd conf/
+  697  ls -1
+  698  vi context.xml 
+  699  vi server.xml 
+  700  cd ..
+  701  cd bin
+  702  ls
+  703  bash startup.sh
+  704  cd ..
+  705  ls
+  706  cd conf/
+  707  ls
+  708  vi server.xml 
+  709  sudo systemctl restart tomcat
+  710  sudo /usr/local/tomcat/bin/shutdown.sh
+  711  sudo /usr/local/tomcat/bin/startup.sh
+  712  ~/apache-tomcat-9.0.91/bin/shutdown.sh 
+  713  ~/apache-tomcat-9.0.91/bin/startup.sh 
+  714  sudo vi /etc/systemd/system/tomcat.service
+  715  sudo systemctl daemon-reload
+  716  sudo systemctl start tomcat
+  717  systemctl status tomcat.service
+  718  cd ..
+  719  ls -1
+  720  ls bin -1
+  721  cd bin/startup.sh
+  722  cd bin
+  723  ll
+  724  sudo vi /etc/systemd/system/tomcat.service
+  725  sudo systemctl daemon-reload
+  726  sudo systemctl start tomcat
+  727  sudo systemctl enable tomcat
+  728  sudo systemctl status tomcat
+  729  sudo systemctl stop tomcat
+  730  sudo systemctl status tomcat
+  731  sudo systemctl start tomcat
+  732  sudo systemctl status tomcat
+  733  sudo systemctl stop tomcat
+  734  sudo vi /etc/apache2/ports.conf
+  735  sudo vi /etc/apache2/sites-available/000-default.conf
+  736  sudo vi /etc/apache2/ports.conf
+  737  sudo systemctl restart apache2
+  738  sudo netstat -tuln | grep LISTEN
+  739  cat /var/www/html/index.html
+  740  vi /var/www/html/index.html
+  741  ll /var/www/html/index.html
+  742  vi /var/www/html/index.html
+  743  sudo vi /var/www/html/index.html
+  744  ls
+  745  cd ..
+  746  find . * | grep web
+  747  ls | grep webapps
+  748  cd webapps
+  749  ls
+  750  mkdir ~/apache-tomcat-9.0.91/webapps/myapp
+  751  ls
+  752  cd myapp
+  753  vi add_twonumbers.html
+  754  ls
+  755  mv add_twonumbers.html index.html
+  756  ls
+  757  cd ~
+  758  sudo apt update
+  759  sudo apt install nginx
+  760  sudo ufw app list
+  761  sudo ufw status
+  762  systemctl status nginx
+  763  top | grep 18038
+  764  top
+  765  vi sudo vi /etc/nginx/sites-available/default
+  766  cd sudo nano /etc/nginx/sites-available
+  767  cd sudo /etc/nginx/sites-available
+  768  sudo cd /etc/nginx/sites-available
+  769  cd /etc/nginx/sites-available
+  770  ls
+  771  ll
+  772  cat default 
+  773  vi default 
+  774  sudo vi default 
+  775  vi default 
+  776  sudo nginx -t
+  777  sudo systemctl restart nginx
+  778  sudo netstat -tuln | grep LISTEN
+  779  vi default 
+  780  sudo vi default 
+  781  sudo systemctl restart nginx
+  782  systemctl status nginx
+  783  ps -ef | grep 81
+  784  ps -ef | grep localhost:
+  785  ps -ef | grep localhost:80
+  786  sudo lsof -i :81
+  787  sudo lsof -i :80
+  788  cd /var/www/
+  789  ls
+  790  cat html
+  791  cd html
+  792  ls
+  793  cat index.html
+  794  sudo vi index.html
+  795  sudo lsof -i :81
+  796  sudo lsof -i :82
+  797  find ~ * |grep  nginix
+  798  find * |grep  nginix
+  799  find * | grep  nginix
+  800  find ~  * | grep  nginix
+  801  cd ~
+  802  find ~ * | grep  nginix
+  803  find * | grep  nginix
+  804  cd sudo mkdir /var/www/nginx-site
+  805  sudo mkdir /var/www/nginx-site
+  806  cd /var/www/nginx-site/
+  807  vi index.html
+  808  sudo vi index.html
+  809  sudo vi /etc/nginx/sites-available/default
+  810  lsof -i:80
+  811  lsof -i : 80
+  812  sudo lsof -i : 81
+  813  sudo lsof -i :82
+  814  sudo lsof -i :81
+  815  sudo vi /etc/nginx/sites-available/default
+  816  sudo systemctl restart nginx
+  817  sudo vi /etc/nginx/sites-available/default
+  818  clear
+  819  cd ~Downloads
+  820  cd ~
+  821  ls -1
+  822  cd Downloads/
+  823  clear
+  824  ssh -i serverone.pem 
+  825  ssh -i serverone.pem ec2-user@3.109.200.211
+  826  clear
+  827  ssh -i serverone.pem ec2-user@3.109.200.211
+  828  ll serverone.pem 
+  829  chmod 400 serverone.pem 
+  830  ll serverone.pem 
+  831  ssh -i serverone.pem ec2-user@3.109.200.211
+  832  ssh -i serverone.pem ec2-user@13.201.228.60
+  833  ssh -i serverone.pem ec2-user@3.110.45.242
+  834  cd ~
+  835  systemctl status apache2
+  836  cat /lib/systemd/system/apache2.service
+  837  cd ~
+  838  readlink -f $(which java) | sed "s:bin/java::"
+  839  cd /apache-tomcat-9.0.91
+  840  ls
+  841  cd apache-tomcat-9.0.91/
+  842  ls -1
+  843  ll bin
+  844  ll bin | grep catalina
+  845  temp ls -1
+  846  ls temp -1
+  847  cat sample 
+  848  grep -v  sample >> test | mv test sample
+  849  grep -v  sample > test | mv test sample
+  850  touch test
+  851  grep -v  sample > test | mv test sample
+  852  cd Devops
+  853  echo "m h a" | grep a
+  854  echo "m h a" | grep -v  
+  855  echo "m h a" | grep -v " "
+  856  echo "m h a" | grep -v ^ 
+  857  echo "m h a" | grep -v  $ 
+  858  echo h a
+  859  echo h a | sed 's/ //'
+  860  clear
+  861  git --version
+  862  cd Devops/
+  863  ls
+  864  cd prctice/
+  865  clear
+  866  git --version
+  867  git config --list
+  868  find * -name git
+  869  find ~ -name git
+  870  find / -name git
+  871  cd /usr/lib/git-core/git
+  872  ls /usr/lib/git-core/git
+  873  cd /usr/lib/git-core
+  874  ls
+  875  ls config
+  876  cd ..
+  877  ls | config
+  878  ls |grep config
+  879  ls pkgconfig/
+  880  ll pkgconfig/
+  881  git config --list --show-origin
+  882  ~/.gitconfig
+  883  clear
+  884  git --version
+  885  mkdir deops_test_repo
+  886  cd ~
+  887  cd Devops
+  888  cd prctice/
+  889  clear
+  890  git --version
+  891  mkdir Devops_test_repo
+  892  touch a
+  893  l
+  894  ls
+  895  cd Devops_test_repo/
+  896  git status
+  897  git init
+  898  ls
+  899  ls -a
+  900  history > git_commands
